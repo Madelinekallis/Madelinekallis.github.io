@@ -20,27 +20,7 @@
             }
         }
     </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
-        }
-        .timeline-line {
-            background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-primary text-gray-100 font-sans">
     <!-- Navigation -->
@@ -509,22 +489,6 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking a link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
